@@ -1,6 +1,5 @@
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import {COLORS} from '@themes';
 import React from 'react';
 import {StatusBar} from 'react-native';
 import AuthContainer from './AuthContainer';
