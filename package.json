@@ -1,0 +1,8 @@
+{
+  "name": "rn_template",
+  "version": "0.0.5",
+  "description": "React Native Template",
+  "repository": "git@github.com:VanLoi-code/rn_template.git",
+  "author": "Van Loi",
+  "license": "MIT"
+}
