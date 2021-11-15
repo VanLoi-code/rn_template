@@ -13,14 +13,7 @@ const RootStack = createNativeStackNavigator();
 
 const RootNavigator = () => {
   return (
-    <NavigationContainer
-      ref={navigationRef}
-      theme={{
-        colors: {
-          background: COLORS.white,
-          text: COLORS.black,
-        },
-      }}>
+    <NavigationContainer ref={navigationRef}>
       <StatusBar
         translucent
         barStyle="dark-content"

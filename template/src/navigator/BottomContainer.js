@@ -7,10 +7,7 @@ const TabStack = createBottomTabNavigator();
 
 const BottomContainer = () => {
   return (
-    <TabStack.Navigator
-      screenOptions={() => ({
-        headerShown: false,
-      })}>
+    <TabStack.Navigator>
       <TabStack.Screen
         name={router.HOME_SCREEN}
         component={bottom[router.HOME_SCREEN]}
