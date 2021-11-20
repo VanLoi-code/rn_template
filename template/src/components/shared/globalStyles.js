@@ -1,10 +1,6 @@
 import {StyleSheet} from 'react-native';
 
 export default StyleSheet.create({
-  rowCenter: {
-    flexDirection: 'row',
-    alignItems: 'center',
-  },
   shadow1: {
     shadowColor: '#000',
     shadowOffset: {
@@ -37,5 +33,25 @@ export default StyleSheet.create({
     shadowRadius: 2.22,
 
     elevation: 3,
+  },
+  rowCenter: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  rowWrap: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+  },
+  rowBetween: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+  },
+  absoluteFill: {
+    position: 'absolute',
+    top: 0,
+    right: 0,
+    bottom: 0,
+    left: 0,
   },
 });

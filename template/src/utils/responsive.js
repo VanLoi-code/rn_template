@@ -24,9 +24,13 @@ export const [shortDimension, longDimension] =
  *
  **/
 
-export const hScale = size => (shortDimension / DESIGN_WIDTH) * size;
+export const hScale = size => {
+  return size && (shortDimension / DESIGN_WIDTH) * size;
+};
 
-export const vScale = size => (longDimension / DESIGN_HEIGHT) * size;
+export const vScale = size => {
+  return size && (longDimension / DESIGN_HEIGHT) * size;
+};
 
 export const moderateHScale = (size, factor = 0.5) => {
   return size + (hScale(size) - size) * factor;
