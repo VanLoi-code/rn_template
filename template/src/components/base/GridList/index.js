@@ -1,16 +1,21 @@
 import {Block} from '@components';
+import {SIZES} from '@themes';
 import React from 'react';
-import {SIZES} from './../../../theme/index';
 
-const GridList = ({numColumns = 2, data = [], renderItem}) => {
+const GridList = ({
+  numColumns = 2,
+  data = [],
+  separator = SIZES.large,
+  renderItem,
+}) => {
+  const padding = separator / 2;
   const widthPercent = `${100 / numColumns}%`;
 
   const _renderItem = (item, index) => {
     return (
       <Block
-        overflow="hidden"
-        key={`${index}`}
-        padding={SIZES.normal}
+        key={`grid-list-${index}`}
+        padding={padding}
         style={{width: widthPercent}}>
         {renderItem({item, index})}
       </Block>
@@ -21,7 +26,7 @@ const GridList = ({numColumns = 2, data = [], renderItem}) => {
     return null;
   } else {
     return (
-      <Block row wrap padding={SIZES.normal}>
+      <Block rowWrap padding={padding}>
         {data.map(_renderItem)}
       </Block>
     );

@@ -1,6 +1,6 @@
-// ANIMATED
 // BASE
 import Block from './base/Block';
+import GridList from './base/GridList';
 
 // COMMON
 
@@ -11,6 +11,7 @@ import Block from './base/Block';
 export {
   // BASE
   Block,
+  GridList,
   // COMMON
   // FORM
   // HEADER

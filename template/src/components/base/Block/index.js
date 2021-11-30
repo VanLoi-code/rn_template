@@ -136,20 +136,20 @@ const Block = ({
 
   const customStyles = [
     // MARGIN AND PADDING
-    handleCheckObj({margin: hs(margin)}),
-    handleCheckObj({marginTop: hs(marginTop)}),
-    handleCheckObj({marginRight: hs(marginRight)}),
-    handleCheckObj({marginBottom: hs(marginBottom)}),
-    handleCheckObj({marginLeft: hs(marginLeft)}),
-    handleCheckObj({marginHorizontal: hs(marginHorizontal)}),
-    handleCheckObj({marginVertical: hs(marginVertical)}),
-    handleCheckObj({padding: hs(padding)}),
-    handleCheckObj({paddingTop: hs(paddingTop)}),
-    handleCheckObj({paddingRight: hs(paddingRight)}),
-    handleCheckObj({paddingBottom: hs(paddingBottom)}),
-    handleCheckObj({paddingLeft: hs(paddingLeft)}),
-    handleCheckObj({paddingHorizontal: hs(paddingHorizontal)}),
-    handleCheckObj({paddingVertical: hs(paddingVertical)}),
+    handleCheckObj({margin}),
+    handleCheckObj({marginTop}),
+    handleCheckObj({marginRight}),
+    handleCheckObj({marginBottom}),
+    handleCheckObj({marginLeft}),
+    handleCheckObj({marginHorizontal}),
+    handleCheckObj({marginVertical}),
+    handleCheckObj({padding}),
+    handleCheckObj({paddingTop}),
+    handleCheckObj({paddingRight}),
+    handleCheckObj({paddingBottom}),
+    handleCheckObj({paddingLeft}),
+    handleCheckObj({paddingHorizontal}),
+    handleCheckObj({paddingVertical}),
 
     // COLOR AND BACKGROUND COLOR
     handleCheckObj({color: COLORS[color] || color}),
@@ -286,6 +286,8 @@ const Block = ({
     rowCenter && globalStyles.rowCenter,
     rowBetween && globalStyles.rowBetween,
     absoluteFill && globalStyles.absoluteFill,
+
+    style,
   ];
 
   return (
